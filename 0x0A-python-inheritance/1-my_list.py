@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defines an inherited list class MyList."""
+
+
 class MyList(list):
     """ Class that inherits the attributes references of class list
 
