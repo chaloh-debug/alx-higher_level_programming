@@ -2,8 +2,8 @@
 """
 module to decode a JSON file
 """
-
 import json
+
 
 def from_json_string(my_str):
     """
