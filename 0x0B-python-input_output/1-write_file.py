@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 module to write a string to a txt file
+
 """
 
 
