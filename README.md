@@ -1,2 +1,1 @@
-0x00-python-hello_world
-Import modules
+0x0D. SQL - Introduction
