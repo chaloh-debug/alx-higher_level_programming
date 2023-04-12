@@ -2,7 +2,7 @@
 const x = parseInt(process.argv[2]);
 function factorial(x) {
   if ((x === 1) || (Number.isNaN(x))) {
-    return 1;
+    return (1);
   } else {
     return ( x * factorial(x - 1));
   }
