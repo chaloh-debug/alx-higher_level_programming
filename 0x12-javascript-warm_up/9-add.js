@@ -4,4 +4,5 @@ function add(a, b) {
   b = parseInt(process.argv[3]);
   console.log(a + b);
 }
+
 add();
