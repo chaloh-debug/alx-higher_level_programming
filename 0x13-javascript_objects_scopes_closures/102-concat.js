@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const argv = require('process');
+const { argv } = require('process');
 const fs = require('fs');
 
 const arg1 = fs.readFileSync(argv[2]);
