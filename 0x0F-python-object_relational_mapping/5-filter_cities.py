@@ -8,8 +8,8 @@ import sys
 import MySQLdb
 
 def state2cities():
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
-                         db=sys.argv[3], port=3306)
+    db = MySQLdb.connect(user=sys.argv[1], db=sys.argv[2],
+                         passwd=sys.argv[3], port=3306)
     cur = db.cursor()
     cur.execute("SELECT cities.name \
                  FROM cities INNER JOIN states \
