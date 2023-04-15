@@ -17,9 +17,9 @@ if __name__ == '__main__':
     session = Session()
 
     states = session.query(State)
-    for i in states:
-        if 'a' in i.name:
-            session.delete(i)
+    for each in states:
+        if 'a' in each.name:
+            session.delete(each)
     session.commit()
 
     session.close()
