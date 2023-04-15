@@ -14,7 +14,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    state_update = session.query(State).filter(State.id == 2).first()
+    state_update = session.query(State).filter(State.id == '2').first()
     state_update.name = "New_Mexico"
     session.commit()
 
