@@ -16,9 +16,12 @@ if __name__ == '__main__':
     session = Session()
     states = session.query(State).filter(
                      State.name.like(sys.argv[4])
-                     )
+                     ).first()
+
+    session.close()
+    engine.dispose()
 
     if states:
-        print('states.id')
+        print(states.id)
     else:
-        print('Not found')
+        print("Not found")
