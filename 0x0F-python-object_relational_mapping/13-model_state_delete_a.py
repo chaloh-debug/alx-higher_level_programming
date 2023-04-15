@@ -21,6 +21,3 @@ if __name__ == "__main__":
         if 'a' in each.name:
             session.delete(each)
     session.commit()
-
-    session.close()
-    engine.dispose()
