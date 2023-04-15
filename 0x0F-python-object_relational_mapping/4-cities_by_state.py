@@ -11,10 +11,12 @@ if __name__ == '__main__':
                          db=sys.argv[3], port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC;")
+    cur.execute("SELECT cities.id, cities.name, states.name \
+                 FROM cities INNER JOIN states \
+                 ON cities.state_id = states.id ORDER BY cities.id ASC;")
     rows = cur.fetchall()
 
     for row in rows:
         print(row)
     cur.close()
-    cur.db()
+    db.close()
