@@ -6,4 +6,4 @@ request('https://swapi-api.alx-tools.com/api/films/' + id + '/', function(error,
     const data = JSON.parse(body);
     console.log(data.title);
   }
-})
+});
